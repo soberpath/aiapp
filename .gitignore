@@ -1,0 +1,53 @@
+node_modules/
+android/
+.expo/
+.gradle/
+*.apk
+*.aab
+# Windows system files
+NTUSER.DAT
+NTUSER.DAT*
+ntuser.dat*
+ntuser.ini
+*.hprof
+*.log
+*.blf
+*.regtrans-ms
+
+# VS Code extensions
+.vscode/
+
+# Personal folders
+Favorites/
+Links/
+Music/
+Pictures/
+Videos/
+Searches/
+Saved Games/
+OneDrive/
+Intel/
+scoop/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Android build artifacts
+android/
+*.apk
+*.aab
+.gradle/
+
+# Expo
+.expo/
+dist/
+
+# Only track the app source
+!Downloads/nextlogicai-hub-FINAL/nextlogicaiapp/
+!Downloads/nextlogicai-hub-FINAL/nextlogicaiapp/**
+
+# But still ignore node_modules and android inside the app
+Downloads/nextlogicai-hub-FINAL/nextlogicaiapp/node_modules/
+Downloads/nextlogicai-hub-FINAL/nextlogicaiapp/android/
+Downloads/nextlogicai-hub-FINAL/nextlogicaiapp/.expo/
