@@ -1,4 +1,4 @@
-import * as SQLite from 'expo-sqlite/next';
+import * as SQLite from 'expo-sqlite';
 
 let db: SQLite.SQLiteDatabase | null = null;
 
@@ -11,8 +11,6 @@ export async function getDatabase(): Promise<SQLite.SQLiteDatabase> {
 }
 
 async function initializeSchema(db: SQLite.SQLiteDatabase) {
-  // Split each statement separately — expo-sqlite 13.x doesn't support
-  // multiple statements in a single execAsync call reliably
   await db.execAsync('PRAGMA journal_mode = WAL;');
 
   await db.execAsync(`
